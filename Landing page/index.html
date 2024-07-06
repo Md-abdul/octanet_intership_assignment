@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Landing Page</title>
+  </head>
+  <body>
+    <!-- Navbar section -->
+    <div class="navbar">
+      <div class="container">
+        <div class="logo">
+          <img
+            src="https://octanet.in/storage/2024/06/Black-and-Blue-Financial-Investment-Logo-1-135x40.png"
+            alt="Logo"
+            class="logo-img"
+          />
+        </div>
+        <div class="nav-links">
+          <a href="#" class="nav-link">Features</a>
+          <a href="#" class="nav-link">GitHub</a>
+          <a href="#" class="nav-link">For Designers</a>
+          <a href="#" class="nav-link active">Training & Internship</a>
+        </div>
+        <button class="hamburger-btn" onclick="toggleDrawer()">&#9776;</button>
+      </div>
+    </div>
+    <div class="drawer" id="drawer">
+      <div class="drawer-content">
+        <button class="close-btn" onclick="toggleDrawer()">×</button>
+        <div class="drawer-header">atomize</div>
+        <div class="drawer-links">
+          <a href="#" class="drawer-link">Features</a>
+          <a href="#" class="drawer-link">GitHub</a>
+          <a href="#" class="drawer-link">For Designers</a>
+          <a href="#" class="drawer-link active">Documentation</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- mid section -->
+
+    <div class="section">
+      <div class="text-container">
+        <p class="main-text">Why Choose Our Virtual Programs?</p>
+        <p class="main-text1">
+          Our comprehensive programs are designed to equip you with the skills,
+          experience, and credentials <br />
+          needed to excel in the tech industry.
+        </p>
+      </div>
+
+      <div class="grid-container">
+        <div class="card">
+          <img src="./imgag/g-1.png" alt="Dimond Icon" class="card-image" />
+          <p class="card-title">Design</p>
+          <div class="card-description">
+            <p>Design your website by using</p>
+            <p>Atomize for Sketch App.</p>
+          </div>
+          <p class="card-link">
+            Design Resource <span class="arrow-icon">&rarr;</span>
+          </p>
+        </div>
+        <div class="card">
+          <img
+            src="./imgag/eye-icon.png"
+            alt="Dimond Icon"
+            class="card-image"
+          />
+          <p class="card-title">Real-World Projects</p>
+          <div class="card-description">
+            <p>Design your website by using</p>
+            <p>Atomize for Sketch App.</p>
+          </div>
+          <p class="card-link">
+            Design Resource <span class="arrow-icon">&rarr;</span>
+          </p>
+        </div>
+        <div class="card">
+          <img src="./imgag/g-3.png" alt="React Icon" class="card-image" />
+          <p class="card-title">Development</p>
+          <div class="card-description">
+            <p>Bring your designs to life with</p>
+            <p>Atomize for React JS.</p>
+          </div>
+          <p class="card-link">
+            Documentation <span class="arrow-icon">&rarr;</span>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="code-section">
+      <div class="stats-grid">
+        <div class="stats-box">
+          <p class="stats-number">15+</p>
+          <div class="stats-description">
+            <p>Ready to use React</p>
+            <p>Components</p>
+          </div>
+        </div>
+        <div class="stats-box">
+          <p class="stats-number">60+</p>
+          <div class="stats-description">
+            <p>Predefined colors for</p>
+            <p>theme setup</p>
+          </div>
+        </div>
+        <div class="stats-box">
+          <p class="stats-number">80+</p>
+          <div class="stats-description">
+            <p>Detailed documentation</p>
+            <p>for each component</p>
+          </div>
+        </div>
+        <div class="stats-box">
+          <p class="stats-number">FREE</p>
+          <div class="stats-description">
+            <p>Open source with regular</p>
+            <p>updates</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="image-container">
+      <div class="image1-cont">
+        <img src="https://octanet.in/storage/2020/07/gallery-1.jpg" alt="" />
+        <img src="https://octanet.in/storage/2020/07/gallery-2.jpg" alt="" />
+      </div>
+      <div class="img2-cont">
+        <img
+          src="https://octanet.in/storage/2020/06/gallery1-free-img.jpg"
+          alt=""
+        />
+        <img
+          src="https://octanet.in/storage/2020/06/gallery3-free-img.jpg"
+          alt=""
+        />
+        <img
+          src="https://octanet.in/storage/2020/06/gallery4-free-img.jpg"
+          alt=""
+        />
+        <img
+          src="https://octanet.in/storage/2020/06/left-free-img.jpg"
+          alt=""
+        />
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <p>&copy; 2024 Octanet. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Contact</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Navbar script code  -->
+    <script>
+      function toggleDrawer() {
+        const drawer = document.getElementById("drawer");
+        drawer.classList.toggle("open");
+      }
+    </script>
+  </body>
+</html>
