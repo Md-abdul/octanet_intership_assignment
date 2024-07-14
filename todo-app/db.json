@@ -1,0 +1,10 @@
+{
+  "task": [
+    {
+      "id": 1,
+      "title": "Complete Homework",
+      "description": "Finish math and science homework by tomorrow.",
+      "status": "in-progress"
+    }
+  ]
+}
