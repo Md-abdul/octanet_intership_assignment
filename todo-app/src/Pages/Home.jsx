@@ -39,7 +39,6 @@ export const Home = () => {
         method: "DELETE",
       });
       setTasks(tasks.filter((task) => task.id !== id));
-      toast.success("Task deleted successfully!");
     } catch (error) {
       toast.error("Failed to delete task.");
     }

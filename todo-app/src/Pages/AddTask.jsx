@@ -16,7 +16,7 @@ import {
   IconButton,
   Box,
 } from "@chakra-ui/react";
-import { toast } from "react-toastify";
+import { toast, ToastContainer } from "react-toastify";
 import { AddIcon } from "@chakra-ui/icons";
 
 export const AddTask = ({ onAdd }) => {
@@ -111,8 +111,7 @@ export const AddTask = ({ onAdd }) => {
                     borderColor="rgba(182, 36, 255, 0.882)"
                     p={5}
                     border={"2px solid rgba(182, 36, 255, 0.882)"}
-                    // _hover={{ borderColor: "red" }}
-                    // _focus={{ borderColor: "red" }}
+
                   />
                   <FormLabel mt={4}>Status</FormLabel>
                   <Input
@@ -136,6 +135,7 @@ export const AddTask = ({ onAdd }) => {
           </AlertDialogOverlay>
         </AlertDialog>
       </Box>
+      <ToastContainer/>
     </>
   );
 };
