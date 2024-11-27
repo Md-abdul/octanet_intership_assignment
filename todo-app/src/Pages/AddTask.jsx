@@ -34,7 +34,7 @@ export const AddTask = ({ onAdd }) => {
     };
 
     try {
-      const response = await fetch("http://localhost:5001/task", {
+      const response = await fetch("https://mock-react-data-1.onrender.com/task", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

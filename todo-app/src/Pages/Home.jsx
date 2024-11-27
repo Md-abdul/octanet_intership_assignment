@@ -20,7 +20,7 @@ export const Home = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await fetch("http://localhost:5001/task");
+        const res = await fetch("https://mock-react-data-1.onrender.com/task");
         if (!res.ok) throw new Error("Failed to fetch tasks");
         const data = await res.json();
         setTasks(data);
@@ -35,7 +35,7 @@ export const Home = () => {
 
   const handleDelete = async (id) => {
     try {
-      await fetch(`http://localhost:5001/task/${id}`, {
+      await fetch(`https://mock-react-data-1.onrender.com/task/${id}`, {
         method: "DELETE",
       });
       setTasks(tasks.filter((task) => task.id !== id));
@@ -46,7 +46,7 @@ export const Home = () => {
 
   const handleUpdate = async (id, newStatus) => {
     try {
-      await fetch(`http://localhost:5001/task/${id}`, {
+      await fetch(`https://mock-react-data-1.onrender.com/task/${id}`, {
         method: "PATCH",
         headers: {
           "Content-Type": "application/json",
